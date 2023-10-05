@@ -22,7 +22,7 @@ export const options: NextAuthOptions = {
                 password: {label: "Password", type: "password", placeholder: "********"}
             },
             authorize: async (credentials) => {
-                const user = {id: "1", name: "Horst", password: "1234"};
+                const user = {id: "1", name:process.env.CREDENTIALS_USER, password: process.env.CREDENTIALS_PASSWORD};
                 if (credentials?.username === user.name && credentials?.password === user.password) {
                     return user;
                 } else {
