@@ -1,9 +1,9 @@
 import './globals.css'
 import type {Metadata} from 'next'
 import {Inter} from 'next/font/google'
-import Navbar from "@/app/components/NavBar";
-import AuthProvider from "@/app/context/AuthProvider";
 import React from "react";
+import AuthProvider from "@/app/context/AuthProvider";
+import Navbar from "@/app/components/NavBar";
 
 const inter = Inter({subsets: ['latin']})
 
